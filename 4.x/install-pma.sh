@@ -1,5 +1,8 @@
 #!/bin/sh
 
+#stop on error
+set -e
+
 cd /
 
 wget  -O /pma.tar.gz $1
