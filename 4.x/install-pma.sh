@@ -5,7 +5,7 @@ set -e
 
 cd /
 
-wget  -O /pma.tar.gz $1
+wget  -O /pma.tar.gz https://files.phpmyadmin.net/phpMyAdmin/$PMA_VERSION/phpMyAdmin-$PMA_VERSION-all-languages.tar.gz
 
 PMA_DIR=$(tar -tzf /pma.tar.gz | head -n 1)
 echo $PMA_DIR
